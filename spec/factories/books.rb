@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :book do
-    title { Fake::Book.title }
-    author { Fake::Book.author }
+    title { Faker::Book.title }
+    author { Faker::Book.author }
     genre { Faker::Book.genre }
     summary { Faker::Lorem.paragraph }
     number_sold { Faker::Number.within(range: 1..1000) }
