@@ -12,7 +12,7 @@ class Api::V1::BooksController < ApplicationController
   end
 
   def update
-    
+    render json: Book.update(params[:id], book_params)
   end
 
   private
